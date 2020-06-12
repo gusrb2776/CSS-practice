@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            #parent, #other{
+                border:5px solid tomato;
+            }
+            #grand{
+                position: relative;
+            }
+            #me{
+                background-color: black;
+                color:white;
+                position: absolute;
+                left:0px;
+                top:0px;    
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="other">other</div>
+        <div id="grand">
+            <div id="parent">
+                parent
+                <div id="me">me</div>
+            </div>
+        </div>
+        absolute : 변경시에 postion:static;인 부모가 나타날 떄 까지 무시하다가 나타나면 그걸 기준으로 변경. 기본값으로 지정되는건 부모를 기준으로 지정됨.<br>
+        , relative : 부모에 대해서 상대적으로.
+    </body>
+
+</html>
